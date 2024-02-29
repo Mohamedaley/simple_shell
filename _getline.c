@@ -8,8 +8,8 @@
 */
 ssize_t _getline(char **str, size_t *n, FILE *stream)
 {
-	ssize_t num = 0;
+    ssize_t num = 0;
 
-	num = getline(str, n, stream);
-	return (num);
+    num = getline(str, n, stream);
+    return (num);
 }

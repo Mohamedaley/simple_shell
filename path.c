@@ -16,7 +16,8 @@ char *path()
 		{
 			_path = *env;
 		}
-		*env++;
+		if (*env++ == NULL)
+			break;
 	}
 	*env = NULL;
 	return (_path);

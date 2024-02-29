@@ -6,14 +6,15 @@
  */
 ssize_t _input(char **str)
 {
-	size_t size = 128;
-	ssize_t num = 0;
-	*str = malloc(128);
-	if (!*str)
-	{
-		perror("Error allocating memory");
-		return (0);
-	}
-	num = _getline(str, &size, stdin);
-	return (num);
+    size_t size = 128;
+    ssize_t num = 0;
+
+    *str = malloc(128);
+    if (!*str)
+    {
+        perror("Error allocating memory");
+        return (0);
+    }
+    num = _getline(str, &size, stdin);
+    return (num);
 }

@@ -6,14 +6,14 @@
  */
 void __free(char **argv)
 {
-	int i = 0;
+    int i = 0;
 
-	while (argv[i])
-	{
-		free(argv[i]);
-		argv[i] = NULL;
-		i++;
-	}
-	free(argv);
-	argv = NULL;
+    while (argv[i])
+    {
+        free(argv[i]);
+        argv[i] = NULL;
+        i++;
+    }
+    free(argv);
+    argv = NULL;
 }
