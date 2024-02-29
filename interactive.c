@@ -11,7 +11,6 @@ void interacticve(void)
 
 	while (isatty(1))
 	{
-		printf("$Shell$: ");
 		size = _input(&str);
 		if (size == -1)
 		{
