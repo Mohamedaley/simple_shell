@@ -3,8 +3,8 @@
  * main - An entry point
  * Return: 0 on Success
  */
-int main()
+int main(void)
 {
-    interacticve();
-    return (0);
+	interacticve();
+	return (0);
 }

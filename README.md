@@ -1,2 +1,1 @@
-Simple shell project files
-
+ALX Simple Shell Project

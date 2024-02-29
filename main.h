@@ -11,7 +11,11 @@
 #include <sys/stat.h>
 #include <stddef.h>
 #include <dirent.h>
-
+/**
+ * struct node - A linked list node
+ * @data: the data passed;
+ * @link: the pointer to the list
+*/
 typedef struct node
 {
 	char *data;
@@ -35,6 +39,6 @@ void __free(char **argv);
 int tokenn(char *str);
 char **toke(char *str);
 ssize_t _input(char **str);
-void interacticve();
+void interacticve(void);
 
 #endif

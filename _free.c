@@ -6,6 +6,6 @@
  */
 void _free(char *str)
 {
-    free(str);
-    str = NULL;
+	free(str);
+	str = NULL;
 }

@@ -7,7 +7,8 @@
  */
 char *_strtok(char *str, const char *delim)
 {
-    char *new;
-    new = strtok(str, delim);
-    return (new);
+	char *new;
+
+	new = strtok(str, delim);
+	return (new);
 }

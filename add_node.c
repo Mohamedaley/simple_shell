@@ -7,21 +7,21 @@
  */
 void add_node(list_t *head, char *str)
 {
-    list_t *temp;
-    list_t *ptr = head;
+	list_t *temp;
+	list_t *ptr = head;
 
-    temp = malloc(sizeof(list_t));
-    if (!temp)
-        return;
+	temp = malloc(sizeof(list_t));
+	if (!temp)
+		return;
 
-    temp->data = strdup(str);
-    temp->link = NULL;
+	temp->data = strdup(str);
+	temp->link = NULL;
 
-    if (head == NULL)
-        return;
+	if (head == NULL)
+		return;
 
-    while (ptr->link)
-        ptr = ptr->link;
+	while (ptr->link)
+		ptr = ptr->link;
 
-    ptr->link = temp;
+	ptr->link = temp;
 }

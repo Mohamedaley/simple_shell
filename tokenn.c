@@ -6,14 +6,14 @@
  */
 int tokenn(char *str)
 {
-    int i = 0;
-    char *token = NULL;
+	int i = 0;
+	char *token = NULL;
 
-    token = _strtok(str, " ");
-    while (token)
-    {
-        i++;
-        token = _strtok(NULL, " ");
-    }
-    return (i);
+	token = _strtok(str, " ");
+	while (token)
+	{
+		i++;
+		token = _strtok(NULL, " ");
+	}
+	return (i);
 }

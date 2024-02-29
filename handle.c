@@ -6,12 +6,12 @@
  */
 void handle(char **argv)
 {
-    char *expath = NULL;
-    list_t *head;
+	char *expath = NULL;
+	list_t *head;
 
-    head = list_handle();
-    expath = search(argv[0], head);
-    _exec(expath, argv);
-    free(expath);
-    free_list(head);
+	head = list_handle();
+	expath = search(argv[0], head);
+	_exec(expath, argv);
+	free(expath);
+	free_list(head);
 }
