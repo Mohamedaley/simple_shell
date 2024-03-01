@@ -8,6 +8,7 @@ void interacticve(void)
 	char **argv = NULL;
 	char *str = NULL;
 	ssize_t size;
+	int id;
 
 	while (isatty(1))
 	{
@@ -21,12 +22,21 @@ void interacticve(void)
 		}
 		else
 		{
-			argv = toke(str);
-			handle(argv);
-			__free(argv);
-			argv = NULL;
-			_free(str);
-			str = NULL;
+			id = cmp(str);
+			if (id == 1)
+			{
+				_free(str);
+				str = NULL;
+			}
+			else
+			{
+				argv = toke(str);
+				handle(argv);
+				__free(argv);
+				argv = NULL;
+				_free(str);
+				str = NULL;
+			}
 		}
 	}
 }

@@ -40,5 +40,5 @@ int tokenn(char *str);
 char **toke(char *str);
 ssize_t _input(char **str);
 void interacticve(void);
-
+int cmp(char *str);
 #endif
