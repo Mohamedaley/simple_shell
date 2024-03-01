@@ -14,7 +14,7 @@ char *search(char *argv, list_t *head)
 
 	ptr = head;
 	if (argv[0] == '/')
-		return(argv);
+		return (argv);
 	if (!argv)
 		return (NULL);
 
