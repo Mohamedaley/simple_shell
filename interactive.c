@@ -11,6 +11,7 @@ void interacticve(void)
 
 	while (isatty(1))
 	{
+		printf("$ ");
 		size = _input(&str);
 		if (size == -1)
 		{
