@@ -12,6 +12,9 @@ void handle(char **argv)
 	head = list_handle();
 	expath = search(argv[0], head);
 	_exec(expath, argv);
-	free(expath);
+	if (strcmp(argv[0], expath) != 0)
+	{
+		free(expath);
+	}
 	free_list(head);
 }

@@ -13,6 +13,8 @@ char *search(char *argv, list_t *head)
 	int ptrsize = 0;
 
 	ptr = head;
+	if (argv[0] == '/')
+		return(argv);
 	if (!argv)
 		return (NULL);
 
